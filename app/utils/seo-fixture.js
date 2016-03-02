@@ -4,7 +4,7 @@ export default {
     {title: "200 words before 1st embed"},
     {title: "Headline 4-12 words"},
     {title: "3000 word max"},
-    {title: "Headline is identical to the Page Title"},
+    {title: "Headline identical to title"},
   ],
   seo: [
     {title: 'Focus keyword/s', score: 'required'},

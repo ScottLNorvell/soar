@@ -12,6 +12,14 @@ html {
   background: red;
 }
 
+.fail {
+    color: #f04027;
+}
+
+.pass {
+    color: green;
+}
+
 .sr-final-score {
   font-family: DIN;
   font-weight: bold;
@@ -19,6 +27,9 @@ html {
   letter-spacing: -0.8px;
   color: #ffbd00;
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 0 !important;
+  margin: 0;
   &__label {
     font-family: DIN;
     font-weight: bold;
@@ -26,11 +37,19 @@ html {
     letter-spacing: -0.1px;
     color: #2f82f7;
     text-align: center;
+    margin: -30px;
   }
 }
 
 .sr-rule-title {
   padding-left: 5px;
+  font-size: 16px;
+}
+
+.sr-rule-score {
+  padding-left: 5px;
+  font-size: 14px;
+  color: #999999;
 }
 
 .sr-checklist {
@@ -38,6 +57,30 @@ html {
   font-size: 18px;
   letter-spacing: -0.1px;
   font-weight: normal;
+  padding-left: 20px;
+  white-space: nowrap;
+}
+
+.sr-checklist p {
+    padding: 5px;
+}
+
+.sr-checklist.val {
+  border-left: 1px solid black;
+}
+
+.sr-checklist-title {
+    font-weight: bold;
+}
+
+.sr-checklist div {
+    padding-bottom: 20px;
+}
+
+.sr-gn-grade {
+  font-family: DIN;
+  font-size: 50px;
+  font-weight: bold;
 }
 
 .sr-panel {
