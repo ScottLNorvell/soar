@@ -3,7 +3,8 @@ import Ember from 'ember';
 const {
   Component,
   inject,
-  computed
+  computed,
+  observer
 } = Ember;
 
 export default Component.extend({

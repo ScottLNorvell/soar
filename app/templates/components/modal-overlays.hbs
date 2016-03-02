@@ -1,93 +1,16 @@
 {{#if show}}
 <div id="modal-overlays">
   <div class="ember-modal-wrapper">
-<div  data-ember-modal-dialog-overlay="true" class="ember-modal-overlay translucent" style="cursor: pointer;">
-  <div  class="ember-modal-dialog ember-modal-dialog-target-attachment-center cp-modal-dialog-positioned-container-2e040c42" style="left: 50%; top: 50%; margin-left: -450px; margin-top: -263px;">
-    {{!-- MODAL HEADER --}}
-    <div class="modal-header">
-      <a class="close" title="close" {{action 'closeModal'}}></a>
-      <h4 class="modal-title">Publish</h4>
-    </div>
 
-<div  class="content-publisher-185d44fc">
-<div class="container">
-  <div class="row">
-    <div class="col-4">
-      <label class="control-label">Date</label>
-      <input id="input-ember1857" name="Date" type="text" class="ember-text-field">
-    </div>
-    <div class="col-2">
-      <label class="control-label">Time</label>
-      <input type="text" class="timepicker ember-text-field ui-timepicker-input" autocomplete="off">
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-11">
-      <label for="blah">slug </label>
-      <div class="text-field form-group">
-        <i class=" btn-autogen"></i>
-        <input id="eb5b8ff0-e075-11e5-943d-816133cdc00d" maxlength="524288" placeholder="Enter text here" title="" name="slug" size="20" type="text" class="autogenerate-field ember-text-field">
+    <div  data-ember-modal-dialog-overlay="true" class="ember-modal-overlay translucent" style="cursor: pointer;">
+      <div  class="ember-modal-dialog ember-modal-dialog-target-attachment-center cp-modal-dialog-positioned-container-2e040c42" style="left: 50%; top: 50%; margin-left: -450px; margin-top: -263px;">
+        <div class="sr-validation-guy">
+          <h1>SEO Validation</h1>
+          <h5>Scanning content for Google News Index and Soar score</h5>
+          {{progress-bar}}
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="row">
-    <div class="col-11">
-        <div  class=" form-group">
-          <label class="control-label">Template</label>
-    <div class="select2-container form-control" id="s2id_autogen22">
-      <a href="javascript:void(0)" class="select2-choice" tabindex="-1">
-        <span class="select2-chosen" id="select2-chosen-23">Timeline - Large</span><abbr class="select2-search-choice-close"></abbr>
-        <span class="select2-arrow" role="presentation"><b role="presentation"></b></span>
-      </a>
-      <label for="s2id_autogen23" class="select2-offscreen"></label>
-      <input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-23" id="s2id_autogen23">
-      <div class="select2-drop select2-display-none dropdown-options select2-with-searchbox"><div class="select2-search"><label for="s2id_autogen23_search" class="select2-offscreen"></label>
-        <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-23" id="s2id_autogen23_search" placeholder=""></div>
-        <ul class="select2-results" role="listbox" id="select2-results-23"></ul></div></div>
-        <select name="Template" tabindex="-1" title="" style="display: none;">
-          <option value="">Select an option</option>
-          <option value="timeline-full-bleed">Timeline - Full Bleed</option>
-          <option value="timeline-large">Timeline - Large</option>
-          <option value="timeline-small">Timeline - Small</option>
-          <option value="timeline-text-only">Timeline - Text Only</option>
-        </select>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-11">
-      <div  ><!-- View for just one option toggle -->
-  <div class="checkbox-radio">
-    <input  type="checkbox" class=" ember-checkbox">
-    <label for="ember1905">include in search</label>
-  </div>
-  <!-- View for an array of options -->
-
-</div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-11">
-      <label>full url</label>
-      <p>https://stg-all.conde.io/story</p>
-    </div>
-  </div>
-
-</div>
-<div  class=" cp-modal-footer cp-modal-footer-44f37010"><div class="modal-footer">
-  <a {{action 'closeModal'}}>Cancel</a>
-  <button type="button" class="btn btn-primary" id="modalSubmitButton" >
-    Publish
-  </button>
-</div>
-</div>
-</div>
-
-
-</div></div>  </div>
 </div>
 {{/if}}

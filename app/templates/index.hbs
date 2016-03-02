@@ -1,0 +1,200 @@
+<div class="article index-form">
+  <div class="action-bar navbar action-bar-6733a5ca enabled">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          {{action-buttons}}
+          {{!--
+
+              README: to display message: remove 'fade-out' class...
+
+            --}}
+          <div class="feedback success fade-out">
+            <i class="icon-check"></i>
+            Information saved
+          </div>
+          <div class="metainfo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 publish-information">
+        {{!-- TODO: change to user's name --}}
+        <p>
+          Modified: March 1, 2016 3:44pm by Cathy Zhang
+          <h5 class="status draft">
+            draft
+          </h5>
+        </p>
+      </div>
+  </div>
+
+  <fieldset>
+    {{!-- MAIN FORM --}}
+
+    {{!-- HED --}}
+    <div class="form-group md-field-textarea copilot-form--md-editor-f0443d28 copilot-form--md-editor-f0443d28 col-12">
+      {{form-header-guy label="Hed"}}
+      <div class="md-input-area ">
+        {{textarea value=model.hed  type="text" title="hed" name="hed" placeholder="New Article" class="wmd-textarea  show hed" style="height: 58px;"}}
+        <div class="character-count-e0d4525e">17 chars</div>
+        <div id="wmd-previewember1795" class="md-preview  hide"><p>Here is the title</p></div>
+      </div>
+    </div>
+
+    {{!-- PROMO HED --}}
+    <div class="form-group md-field-textarea copilot-form--md-editor-f0443d28 copilot-form--md-editor-f0443d28 col-12">
+      {{form-header-guy label="Promo hed"}}
+      <div class="md-input-area ">
+        <i  class="btn-autogen"></i>
+        {{textarea value=model.promoHed type="text" title="promo-hed" name="promo-hed" placeholder="Enter promo hed here" class="wmd-textarea autogenerate-field show promoHed" style="height: 37px;"}}
+        <div class="character-count-e0d4525e">16 chars</div>
+        <div id="wmd-previewember1809" class="md-preview  hide"><p>here is my promo</p></div>
+      </div>
+    </div>
+
+    {{!-- DEK --}}
+    <div class="form-group md-field-textarea copilot-form--md-editor-f0443d28 copilot-form--md-editor-f0443d28 col-12">
+      {{form-header-guy label="Dek"}}
+      <div class="md-input-area ">
+        {{textarea value=model.dek type="text" title="dek" name="dek" placeholder="Enter dek here" class="wmd-textarea  show dek" style="height: 37px;"}}
+        <div id="wmd-previewember1824" class="md-preview  hide"><p>here is my dek</p></div>
+      </div>
+    </div>
+
+    {{!-- PROMO DEK --}}
+    <div class="form-group md-field-textarea copilot-form--md-editor-f0443d28 copilot-form--md-editor-f0443d28 col-12">
+      {{form-header-guy label="promo dek"}}
+      <div class="md-input-area ">
+        <i class="btn-autogen"></i>
+        {{textarea value=model.promoDek type="text" title="promo-dek" name="promo-dek" placeholder="Enter promo dek here" class="wmd-textarea autogenerate-field show promoDek" style="height: 37px;"}}
+        <div id="wmd-previewember1828" class="md-preview  hide"><p>here is my promo dek</p></div>
+      </div>
+    </div>
+
+    {{!-- BODY --}}
+    <div class="form-group md-field-textarea copilot-form--md-editor-f0443d28 copilot-form--md-editor-f0443d28 col-12">
+      {{form-header-guy label="body" isBody=true}}
+      <div class="sticky-placeholder" style="display: none;"></div>
+      <div class="md-input-area ">
+        {{textarea value=model.body type="text" title="body" name="body" placeholder="Enter body here" class="wmd-textarea  show body" style="height: 515px;"}}
+        <div id="wmd-previewember1846" class="md-preview  hide"></div>
+      </div>
+    </div>
+
+  </fieldset>
+  {{!-- END MAIN FORM --}}
+
+  {{!-- SEO AREA --}}
+  <fieldset>
+    <div class="row">
+      <div class="col-12">
+        <legend>SEO</legend>
+      </div>
+    </div>
+
+    {{!-- SEO TITLE --}}
+    <div class="text-field form-group copilot-form--text-field-018b074f copilot-form--text-field-018b074f col-12">
+      <label class="control-label" for="2605ddb0-dfed-11e5-8691-2f74115395a2">Seo title</label>
+      <i  class="btn-autogen"></i>
+      {{input value=model.seoTitle  maxlength="524288" placeholder="Enter seo title here" title="seo-title" name="seo-title" size="20" type="text" class="autogenerate-field seoTitle"}}
+      <div class="character-count-e0d4525e">0 chars</div>
+    </div>
+
+    {{!-- SEO DESCRIPTION --}}
+    <div class="textarea-field form-group copilot-form--textarea-1b26e519 copilot-form--textarea-1b26e519 col-12">
+      <div class="input-area">
+        <label class="control-label" for="2607b270-dfed-11e5-8691-2f74115395a2">Seo description</label>
+        <i class="btn-autogen"></i>
+        {{textarea value=model.seoDescription class="textarea autogenerate-field" title="seo-description" name="seo-description" placeholder="Enter seo description here" style="height: 37px;"}}
+        <div class="character-count-e0d4525e">0 chars</div>
+      </div>
+    </div>
+
+  </fieldset>
+  {{!-- END SEO AREA --}}
+
+  {{!-- TAXONOMY --}}
+  <fieldset>
+    <div class="row">
+      <div class="col-12">
+        <legend>Taxonomy</legend>
+      </div>
+    </div>
+
+    {{!-- TAGS --}}
+    <div class="tag-recommendations-e503996a">
+      <div class="form-group form-field autosuggest-tag col-12">
+        <label>Tags</label>
+        <span class="btn-autogen"></span>
+        <div class="select2-container select2-container-multi autogenerate-field form-control" id="s2id_autogen9">
+          <ul class="select2-choices">
+            <li class="select2-search-choice" style="display: inline-block; line-height: 0.8">
+              <div style="position: relative; top: 8px">{{model.tags.firstObject}}</div>
+              <a href="#" class="select2-search-choice-close"></a>
+            </li>
+            <li class="select2-search-choice" style="display: inline-block; line-height: 0.8">
+              <div style="position: relative; top: 8px">{{model.tags.lastObject}}</div>
+              <a href="#" class="select2-search-choice-close"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    {{!-- END TAGS --}}
+
+    {{!-- FOCUS KEYWORDS --}}
+    <div class="tag-recommendations-e503996a">
+      <div class="form-group form-field autosuggest-tag col-12" style="color: #bd10e0">
+        <label >Focus Keywords</label>
+        <span class="btn-autogen"></span>
+        <div class="select2-container select2-container-multi autogenerate-field form-control" id="s2id_autogen9">
+          <ul class="select2-choices">
+            <li class="select2-search-choice" style="display: inline-block; line-height: 0.8; background-color: #bd10e0">
+              <div style="position: relative; top: 8px">{{model.seoKeywords.firstObject}}</div>
+              <a href="#" class="select2-search-choice-close"></a>
+            </li>
+            <li class="select2-search-choice" style="display: inline-block; line-height: 0.8; background-color: #bd10e0">
+              <div style="position: relative; top: 8px">{{model.seoKeywords.lastObject}}</div>
+              <a href="#" class="select2-search-choice-close"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    {{!-- END FOCUS KEYWORDS --}}
+
+  </fieldset>
+
+  {{!-- PUBLICATION HISTORY --}}
+  <div class="publish-history publish-history-cf1c8cf1"><div class="row">
+    <div class="col-12">
+      <legend>
+        Content History
+      </legend>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="data-table">
+        <div class="data-table-head">
+          <div class="data-table-header">Status</div>
+          <div class="data-table-header">Publish Date</div>
+          <div class="data-table-header">Revision Date</div>
+          <div class="data-table-header">By</div>
+          <div class="data-table-header"></div>
+        </div>
+        <div class="data-table-empty">This item has not yet been published</div>
+      </div>
+    </div>
+  </div>
+  {{!-- END PUBLICATION HISTORY --}}
+
+  </div>
+  </div>
+</div>
