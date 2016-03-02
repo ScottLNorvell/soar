@@ -1,0 +1,32 @@
+<div class="row sr-panel">
+  <div class="col-3 sr-checklist">
+    {{#each googleNews as |rule|}}
+      <p>
+        <i class="icon-check"></i>
+        <span class="sr-rule-title">{{rule.title}}</span>
+      </p>
+    {{/each}}
+  </div>
+  <div class="col-3 sr-checklist">
+    {{#each seoA as |rule|}}
+      <p>
+        <i class="icon-check"></i>
+        <span class="sr-rule-title">{{rule.title}}</span>
+        <span class="sr-rule-score">{{rule.score}}</span>
+      </p>
+    {{/each}}
+  </div>
+  <div class="col-3 sr-checklist">
+    {{#each seoB as |rule|}}
+      <p>
+        <i class="icon-check"></i>
+        <span class="sr-rule-title">{{rule.title}}</span>
+        <span class="sr-rule-score">{{rule.score}}</span>
+      </p>
+    {{/each}}
+  </div>
+  <div class="col-3 sr-checklist">
+    <div class="sr-final-score">74</div>
+    <div class="sr-final-score__label">SEO Score</div>
+  </div>
+</div>

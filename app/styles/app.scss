@@ -9,8 +9,39 @@ html {
 }
 
 .keyword-highlight {
-    background: red;
+  background: red;
 }
+
+.sr-final-score {
+  font-family: DIN;
+  font-weight: bold;
+  font-size: 150px;
+  letter-spacing: -0.8px;
+  color: #ffbd00;
+  text-align: center;
+  &__label {
+    font-family: DIN;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: -0.1px;
+    color: #2f82f7;
+    text-align: center;
+  }
+}
+
+.sr-checklist {
+  font-family: DIN;
+  font-size: 18px;
+  letter-spacing: -0.1px;
+  font-weight: normal;
+
+}
+
+.sr-panel {
+  height: 349px;
+  border: 1px solid black;
+}
+
 .sr-progress__container {
   height: 50px;  /* Can be anything */
   position: relative;
@@ -19,7 +50,7 @@ html {
   -webkit-border-radius: 25px;
   border-radius: 25px;
   border: 2px solid black;
-  padding: 10px;
+  padding: 5px;
   box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
   & > span {
     display: block;
@@ -4734,7 +4765,6 @@ li.dashboard-list-item .actions .toggles li.disabled input[type=checkbox]:after 
 .ember-modal-dialog {
     border-radius: 8px;
     background-color: #fff;
-    box-shadow: 0 0 10px #222;
     padding: 10px
 }
 
@@ -5406,7 +5436,6 @@ li.dashboard-list-item .actions .toggles li.disabled input[type=checkbox]:after 
 .cp-modal-dialog-positioned-container-2e040c42 {
     border-radius: 0;
     padding: 0;
-    box-shadow: 6px 6px 8px 0 #555;
     min-width: 900px
 }
 
