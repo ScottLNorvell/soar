@@ -42,9 +42,13 @@
     <div class="form-group md-field-textarea copilot-form--md-editor-f0443d28 copilot-form--md-editor-f0443d28 col-12">
       {{form-header-guy label="Hed"}}
       <div class="md-input-area ">
-        {{textarea value=model.hed  type="text" title="hed" name="hed" placeholder="New Article" class="wmd-textarea  show hed" style="height: 58px;"}}
-        <div class="character-count-e0d4525e">17 chars</div>
-        {{preview-guy model=model.hed}}
+        {{#state-toggler prop="Hed" as |showPreview|}}
+          {{#if showPreview}}
+            {{preview-guy model=model.hed prop="Hed" style="height: 58px;"}}
+          {{else}}
+            {{textarea value=model.hed  type="text" title="hed" name="hed" placeholder="New Article" class="wmd-textarea  show hed" style="height: 58px;"}}
+          {{/if}}
+        {{/state-toggler}}
       </div>
     </div>
 
@@ -54,7 +58,6 @@
       <div class="md-input-area ">
         <i  class="btn-autogen"></i>
         {{textarea value=model.promoHed type="text" title="promo-hed" name="promo-hed" placeholder="Enter promo hed here" class="wmd-textarea autogenerate-field show promoHed" style="height: 37px;"}}
-        <div class="character-count-e0d4525e">16 chars</div>
         <div id="wmd-previewember1809" class="md-preview  hide"><p>here is my promo</p></div>
       </div>
     </div>
@@ -83,8 +86,13 @@
       {{form-header-guy label="body" isBody=true}}
       <div class="sticky-placeholder" style="display: none;"></div>
       <div class="md-input-area ">
-        {{textarea value=model.body type="text" title="body" name="body" placeholder="Enter body here" class="wmd-textarea  show body" style="height: 515px;"}}
-        {{preview-guy model=model.body}}
+        {{#state-toggler prop="Body" as |showPreview|}}
+          {{#if showPreview}}
+            {{preview-guy model=model.body prop="Body" style="height: 515px;"}}
+          {{else}}
+            {{textarea value=model.body type="text" title="body" name="body" placeholder="Enter body here" class="wmd-textarea  show body" style="height: 515px;"}}
+          {{/if}}
+        {{/state-toggler}}
       </div>
     </div>
 

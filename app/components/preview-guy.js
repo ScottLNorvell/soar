@@ -1,7 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  classNames: [ 'md-preview show' ],
+  classNames: ['md-preview show'],
+  attributeBindings: ['style'],
   text: Ember.computed('model', function()
   		{
   			var previewBodyParagraphs = this.get('model');
