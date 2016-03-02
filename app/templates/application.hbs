@@ -1,3 +1,239 @@
-<h2 id="title">Welcome to Ember</h2>
+{{modal-overlays}}
 
-{{outlet}}
+<div class="logged-in">
+
+  {{top-nav}}
+
+  <div class="article index-form">
+    <div class="action-bar navbar action-bar-6733a5ca enabled">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            {{action-buttons}}
+            {{!-- TO DISPLAY, remove fade-out class... --}}
+            <div class="feedback success fade-out">
+              <i class="icon-check"></i>
+              Information saved
+            </div>
+            <div class="metainfo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 publish-information">
+          <p>
+            Modified: March 1, 2016 3:44pm by Cathy Zhang
+            <h5 class="status draft">
+              draft
+            </h5>
+          </p>
+        </div>
+    </div>
+
+    <fieldset>
+      {{!-- MAIN FORM --}}
+      {{!-- HED --}}
+      <div class="form-group md-field-textarea copilot-form--md-editor-f0443d28 copilot-form--md-editor-f0443d28 col-12">
+        <div class="row button-bar">
+          <label for="wmd-inputember1795">Hed</label>
+          <div id="wmd-button-barember1795">
+            <ul id="wmd-button-rowember1795" class="wmd-button-row markdown-buttonbar">
+              <li class="wmd-button" id="wmd-bold-buttonember1795" title="Strong <strong> Ctrl+B" style="left: 0px;"><span style="display: none; background-position: 0px 0px;"></span><i class="icon-bold"></i></li><li class="wmd-button" id="wmd-italic-buttonember1795" title="Emphasis <em> Ctrl+I" style="left: 0px;"><span style="display: none; background-position: -20px 0px;"></span><i class="icon-italic"></i></li><li class="wmd-button" id="wmd-strike-buttonember1795" title="Strikethrough <del> Ctrl+D" style="left: 0px;"><span style="display: none; background-position: -260px 0px;"></span><i class="icon-strikethrough"></i></li>
+            </ul>
+          </div>
+          <button class="btn-secondary active-secondary">markdown</button>
+          <button class="btn-secondary inactive">preview</button>
+        </div>
+        <div class="md-input-area ">
+          <textarea type="text" id="wmd-inputember1795" title="hed" name="hed" placeholder="New Article" class="wmd-textarea  show hed" style="height: 58px;"></textarea>
+          <div class="character-count-e0d4525e">17 chars</div>
+          <div id="wmd-previewember1795" class="md-preview  hide"><p>Here is the title</p></div>
+        </div>
+      </div>
+      {{!-- PROMO HED --}}
+      <div class="form-group md-field-textarea copilot-form--md-editor-f0443d28 copilot-form--md-editor-f0443d28 col-12">
+        <div class="row button-bar">
+          <label for="wmd-inputember1809">Promo hed</label>
+          <div id="wmd-button-barember1809">
+            <ul id="wmd-button-rowember1809" class="wmd-button-row markdown-buttonbar">
+              <li class="wmd-button" id="wmd-bold-buttonember1809" title="Strong <strong> Ctrl+B" style="left: 0px;"><span style="display: none; background-position: 0px 0px;"></span><i class="icon-bold"></i></li><li class="wmd-button" id="wmd-italic-buttonember1809" title="Emphasis <em> Ctrl+I" style="left: 0px;"><span style="display: none; background-position: -20px 0px;"></span><i class="icon-italic"></i></li><li class="wmd-button" id="wmd-strike-buttonember1809" title="Strikethrough <del> Ctrl+D" style="left: 0px;"><span style="display: none; background-position: -260px 0px;"></span><i class="icon-strikethrough"></i></li>
+            </ul>
+          </div>
+          <button class="btn-secondary active-secondary" >markdown</button>
+          <button class="btn-secondary inactive" >preview</button>
+        </div>
+        <div class="md-input-area ">
+          <i  class="btn-autogen"></i>
+          <textarea type="text" id="wmd-inputember1809" title="promo-hed" name="promo-hed" placeholder="Enter promo hed here" class="wmd-textarea autogenerate-field show promoHed" style="height: 37px;"></textarea>
+          <div class="character-count-e0d4525e">16 chars</div>
+          <div id="wmd-previewember1809" class="md-preview  hide"><p>here is my promo</p></div>
+        </div>
+      </div>
+      {{!-- DEK --}}
+      <div class="form-group md-field-textarea copilot-form--md-editor-f0443d28 copilot-form--md-editor-f0443d28 col-12"><div class="row button-bar">
+        <label for="wmd-inputember1824">Dek</label>
+        <div id="wmd-button-barember1824">
+          <ul id="wmd-button-rowember1824" class="wmd-button-row markdown-buttonbar">
+            <li class="wmd-button" id="wmd-bold-buttonember1824" title="Strong <strong> Ctrl+B" style="left: 0px;"><span style="display: none; background-position: 0px 0px;"></span><i class="icon-bold"></i></li><li class="wmd-button" id="wmd-italic-buttonember1824" title="Emphasis <em> Ctrl+I" style="left: 0px;"><span style="display: none; background-position: -20px 0px;"></span><i class="icon-italic"></i></li><li class="wmd-button" id="wmd-strike-buttonember1824" title="Strikethrough <del> Ctrl+D" style="left: 0px;"><span style="display: none; background-position: -260px 0px;"></span><i class="icon-strikethrough"></i></li><li class="wmd-button" id="wmd-link-buttonember1824" title="Hyperlink <a> Ctrl+L" style="left: 0px;"><span style="display: none; background-position: -40px 0px;"></span><i class="icon-link"></i></li><li class="wmd-button" id="wmd-olist-buttonember1824" title="Numbered List <ol> Ctrl+O" style="left: 0px;"><span style="display: none; background-position: -120px 0px;"></span><i class="icon-orderedList"></i></li><li class="wmd-button" id="wmd-ulist-buttonember1824" title="Bulleted List <ul> Ctrl+U" style="left: 0px;"><span style="display: none; background-position: -140px 0px;"></span><i class="icon-unorderedList"></i></li>
+          </ul>
+        </div>
+        <button class="btn-secondary active-secondary">markdown</button>
+        <button class="btn-secondary inactive">preview</button>
+        </div>
+        <div class="md-input-area ">
+          <textarea type="text" id="wmd-inputember1824" title="dek" name="dek" placeholder="Enter dek here" class="wmd-textarea  show dek" style="height: 37px;"></textarea>
+          <div id="wmd-previewember1824" class="md-preview  hide"><p>here is my dek</p></div>
+        </div>
+      </div>
+      {{!-- PROMO DEK --}}
+      <div class="form-group md-field-textarea copilot-form--md-editor-f0443d28 copilot-form--md-editor-f0443d28 col-12">
+        <div class="row button-bar">
+          <label for="wmd-inputember1828">Promo dek</label>
+          <div id="wmd-button-barember1828">
+            <ul id="wmd-button-rowember1828" class="wmd-button-row markdown-buttonbar">
+              <li class="wmd-button" id="wmd-bold-buttonember1828" title="Strong <strong> Ctrl+B" style="left: 0px;"><span style="display: none; background-position: 0px 0px;"></span><i class="icon-bold"></i></li><li class="wmd-button" id="wmd-italic-buttonember1828" title="Emphasis <em> Ctrl+I" style="left: 0px;"><span style="display: none; background-position: -20px 0px;"></span><i class="icon-italic"></i></li><li class="wmd-button" id="wmd-strike-buttonember1828" title="Strikethrough <del> Ctrl+D" style="left: 0px;"><span style="display: none; background-position: -260px 0px;"></span><i class="icon-strikethrough"></i></li><li class="wmd-button" id="wmd-link-buttonember1828" title="Hyperlink <a> Ctrl+L" style="left: 0px;"><span style="display: none; background-position: -40px 0px;"></span><i class="icon-link"></i></li><li class="wmd-button" id="wmd-olist-buttonember1828" title="Numbered List <ol> Ctrl+O" style="left: 0px;"><span style="display: none; background-position: -120px 0px;"></span><i class="icon-orderedList"></i></li><li class="wmd-button" id="wmd-ulist-buttonember1828" title="Bulleted List <ul> Ctrl+U" style="left: 0px;"><span style="display: none; background-position: -140px 0px;"></span><i class="icon-unorderedList"></i></li>
+            </ul>
+          </div>
+          <button class="btn-secondary active-secondary" >markdown</button>
+          <button class="btn-secondary inactive" >preview</button>
+        </div>
+        <div class="md-input-area ">
+          <i  class="btn-autogen"></i>
+          <textarea type="text" id="wmd-inputember1828" title="promo-dek" name="promo-dek" placeholder="Enter promo dek here" class="wmd-textarea autogenerate-field show promoDek" style="height: 37px;"></textarea>
+          <div id="wmd-previewember1828" class="md-preview  hide"><p>here is my promo dek</p></div>
+        </div>
+      </div>
+      {{!-- RUBRIC --}}
+      <div class="text-field form-group copilot-form--text-field-018b074f copilot-form--text-field-018b074f col-12">
+        <label class="control-label" for="25f6e990-dfed-11e5-8691-2f74115395a2">Rubric</label>
+        <input id="25f6e990-dfed-11e5-8691-2f74115395a2" maxlength="524288" placeholder="Enter rubric here" title="rubric" name="rubric" size="20" type="text" class="rubric ember-text-field">
+      </div>
+      {{!-- BODY --}}
+      <div class="form-group md-field-textarea copilot-form--md-editor-f0443d28 copilot-form--md-editor-f0443d28 col-12">
+        <div class="row button-bar">
+          <label for="wmd-inputember1846">Body</label>
+          <div id="wmd-button-barember1846">
+            <ul id="wmd-button-rowember1846" class="wmd-button-row markdown-buttonbar">
+              <li class="wmd-button" id="wmd-bold-buttonember1846" title="Strong <strong> Ctrl+B" style="left: 0px;"><span style="display: none; background-position: 0px 0px;"></span><i class="icon-bold"></i></li><li class="wmd-button" id="wmd-italic-buttonember1846" title="Emphasis <em> Ctrl+I" style="left: 0px;"><span style="display: none; background-position: -20px 0px;"></span><i class="icon-italic"></i></li><li class="wmd-button" id="wmd-strike-buttonember1846" title="Strikethrough <del> Ctrl+D" style="left: 0px;"><span style="display: none; background-position: -260px 0px;"></span><i class="icon-strikethrough"></i></li><li class="wmd-button" id="wmd-link-buttonember1846" title="Hyperlink <a> Ctrl+L" style="left: 0px;"><span style="display: none; background-position: -40px 0px;"></span><i class="icon-link"></i></li><li class="wmd-button" id="wmd-embed-buttonember1846" title="Embed" style="left: 0px;"><span style="display: none; background-position: -40px 0px;"></span><i class="icon-embed"></i></li><li class="wmd-button" id="wmd-asset-buttonember1846" title="Asset Ctrl+E" style="left: 0px;"><span style="display: none; background-position: -40px 0px;"></span><i class="icon-afm"></i></li><li class="wmd-button" id="wmd-callout-buttonember1846" title="Callout Ctrl+5" style="left: 0px;"><span style="display: none; background-position: -40px 0px;"></span><i class="icon-callout"></i></li><li class="wmd-button" id="wmd-quote-buttonember1846" title="Blockquote <blockquote> Ctrl+Q" style="left: 0px;"><span style="display: none; background-position: -60px 0px;"></span><i class="icon-blockquote"></i></li><li class="wmd-button" id="wmd-olist-buttonember1846" title="Numbered List <ol> Ctrl+O" style="left: 0px;"><span style="display: none; background-position: -120px 0px;"></span><i class="icon-orderedList"></i></li><li class="wmd-button" id="wmd-ulist-buttonember1846" title="Bulleted List <ul> Ctrl+U" style="left: 0px;"><span style="display: none; background-position: -140px 0px;"></span><i class="icon-unorderedList"></i></li><li class="wmd-button" id="wmd-heading-buttonember1846" title="Heading <h1>/<h2> Ctrl+H" style="left: 0px;"><span style="display: none; background-position: -160px 0px;"></span><i class="icon-heading"></i></li><li class="wmd-button" id="wmd-hr-buttonember1846" title="Horizontal Rule <hr> Ctrl+R" style="left: 0px;"><span style="display: none; background-position: -180px 0px;"></span><i class="icon-hr"></i></li><li class="wmd-button" id="wmd-section-buttonember1846" title="Section <section> Ctrl+="style="left: 0px;"><span style="display: none; background-position: -180px 0px;"></span><i class="icon-section"></i></li><li class="wmd-button" id="wmd-newline-buttonember1846" title="New Line - Ctrl+Enter" style="left: 0px;"><span style="display: none; background-position: -180px 0px;"></span><i class="icon-newline"></i></li>
+            </ul>
+          </div>
+          <button class="btn-secondary active-secondary" >markdown</button>
+          <button class="btn-secondary inactive" >preview</button>
+        </div>
+        <div class="sticky-placeholder" style="display: none;"></div>
+        <div class="md-input-area ">
+          <textarea type="text" id="wmd-inputember1846" title="body" name="body" placeholder="Enter body here" class="wmd-textarea  show body" style="height: 515px;"></textarea>
+          <div id="wmd-previewember1846" class="md-preview  hide"></div>
+        </div>
+      </div>
+    </fieldset>
+    {{!-- END MAIN FORM --}}
+    {{!-- SEO AREA --}}
+    <fieldset>
+      <div class="row">
+        <div class="col-12">
+          <legend>SEO</legend>
+        </div>
+      </div>
+      <div class="text-field form-group copilot-form--text-field-018b074f copilot-form--text-field-018b074f col-12">
+        <label class="control-label" for="2605ddb0-dfed-11e5-8691-2f74115395a2">Seo title</label>
+        <i  class="btn-autogen"></i>
+        <input id="2605ddb0-dfed-11e5-8691-2f74115395a2" maxlength="524288" placeholder="Enter seo title here" title="seo-title" name="seo-title" size="20" type="text" class="autogenerate-field seoTitle ember-text-field">
+        <div class="character-count-e0d4525e">0 chars</div>
+      </div>
+      <div class="textarea-field form-group copilot-form--textarea-1b26e519 copilot-form--textarea-1b26e519 col-12">
+        <div class="input-area">
+          <label class="control-label" for="2607b270-dfed-11e5-8691-2f74115395a2">Seo description</label>
+          <i class="btn-autogen"></i>
+          <textarea elementid="2607b270-dfed-11e5-8691-2f74115395a2" class="textarea autogenerate-field" title="seo-description" name="seo-description" placeholder="Enter seo description here" style="height: 37px;"></textarea>
+          <div class="character-count-e0d4525e">0 chars</div>
+        </div>
+      </div>
+    </fieldset>
+    {{!-- END SEO AREA --}}
+
+    {{!-- TAXONOMY --}}
+    <fieldset>
+      <div class="row">
+        <div class="col-12">
+          <legend>Taxonomy</legend>
+        </div>
+      </div>
+
+      {{!-- TAGS --}}
+      <div class="tag-recommendations-e503996a">
+        <div class="form-group form-field autosuggest-tag col-12">
+          <label>Tags</label>
+          <span class="btn-autogen"></span>
+          <div class="select2-container select2-container-multi autogenerate-field form-control" id="s2id_autogen9">
+            <ul class="select2-choices">
+              <li class="select2-search-choice" style="display: inline-block; line-height: 0.8">
+                <div style="position: relative; top: 8px">air travel</div>
+                <a href="#" class="select2-search-choice-close"></a>
+              </li>
+              <li class="select2-search-choice" style="display: inline-block; line-height: 0.8">
+                <div style="position: relative; top: 8px">frequent flyer miles</div>
+                <a href="#" class="select2-search-choice-close"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {{!-- END TAGS --}}
+
+      {{!-- FOCUS KEYWORDS --}}
+      <div class="tag-recommendations-e503996a">
+        <div class="form-group form-field autosuggest-tag col-12" style="color: #bd10e0">
+          <label >Focus Keywords</label>
+          <span class="btn-autogen"></span>
+          <div class="select2-container select2-container-multi autogenerate-field form-control" id="s2id_autogen9">
+            <ul class="select2-choices">
+              <li class="select2-search-choice" style="display: inline-block; line-height: 0.8; background-color: #bd10e0">
+                <div style="position: relative; top: 8px">air france</div>
+                <a href="#" class="select2-search-choice-close"></a>
+              </li>
+              <li class="select2-search-choice" style="display: inline-block; line-height: 0.8; background-color: #bd10e0">
+                <div style="position: relative; top: 8px">daniel boulud</div>
+                <a href="#" class="select2-search-choice-close"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {{!-- END FOCUS KEYWORDS --}}
+
+    </fieldset>
+
+    {{!-- PUBLICATION HISTORY --}}
+    <div class="publish-history publish-history-cf1c8cf1"><div class="row">
+      <div class="col-12">
+        <legend>
+          Content History
+        </legend>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="data-table">
+          <div class="data-table-head">
+            <div class="data-table-header">Status</div>
+            <div class="data-table-header">Publish Date</div>
+            <div class="data-table-header">Revision Date</div>
+            <div class="data-table-header">By</div>
+            <div class="data-table-header"></div>
+          </div>
+          <div class="data-table-empty">This item has not yet been published</div>
+        </div>
+      </div>
+    </div>
+    {{!-- END PUBLICATION HISTORY --}}
+
+    </div>
+    </div>
+  </div>
+</div>
