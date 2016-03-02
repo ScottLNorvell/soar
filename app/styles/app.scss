@@ -29,7 +29,7 @@ html {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 0 !important;
-  margin: 0;
+  margin: 40px 0 0 0;
   &__label {
     font-family: DIN;
     font-weight: bold;
@@ -65,8 +65,8 @@ html {
     padding: 5px;
 }
 
-.sr-checklist.val {
-  border-left: 1px solid black;
+.sr-checklist.val1 {
+  border-left: 1px solid #999999;
 }
 
 .sr-checklist-title {
@@ -75,6 +75,15 @@ html {
 
 .sr-checklist div {
     padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.sr-checklist.val1 div {
+    padding-bottom: 50px;
+}
+
+.sr-checklist.val2 div {
+    padding-bottom: 70px;
 }
 
 .sr-gn-grade {
@@ -84,7 +93,7 @@ html {
 }
 
 .sr-panel {
-  height: 349px;
+  height: 330px;
   border: 1px solid black;
 }
 
