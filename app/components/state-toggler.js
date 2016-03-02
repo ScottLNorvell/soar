@@ -11,10 +11,5 @@ export default Component.extend({
   showPreview: computed('prop', 'stateGuy.{showHedPreview,showBodyPreview}', function() {
     let prop = this.get('prop');
     return this.get(`stateGuy.show${prop}Preview`);
-  }),
-  click() {
-    let prop = this.get('prop');
-    this.toggleProperty(`stateGuy.show${prop}Preview`);
-    return false;
-  }
+  })
 });
