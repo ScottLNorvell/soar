@@ -4,5 +4,6 @@ export default Ember.Service.extend({
   firstTime: true,
   showSoarPanel: false,
   showHedPreview: false,
-  showBodyPreview: false
+  showBodyPreview: false,
+  badResults: true
 });

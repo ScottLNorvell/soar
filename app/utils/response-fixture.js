@@ -1,0 +1,45 @@
+export default {
+  good: {
+    KWPresent: true,
+    KWinHL: true,
+    KWinHLearly: true,
+    KWFirstPara: true,
+    KWinURL: true,
+    MDPresent: false,
+    numCharsInMD: true,
+    KWinMD: true,
+    numWordsInStory: true,
+    presenceOfImage: true,
+    KWinCaption: false,
+    internalLinksNum: true,
+    gnPass: true,
+    gnMinWords: true,
+    gnMinWordsB4Embed: true,
+    gnHeadlineWordCnt: true,
+    gnMaxWords: true,
+    gnTitlesMatch: true,
+    totalScore: 93
+  },
+  bad: {
+    KWPresent: true,
+    KWinHL: false,
+    KWinHLearly: false,
+    KWFirstPara: false,
+    KWinURL: false,
+    MDPresent: true,
+    numCharsInMD: true,
+    KWinMD: false,
+    numWordsInStory: false,
+    presenceOfImage: true,
+    KWinCaption: false,
+    internalLinksNum: true,
+    gnPass: false,
+    gnMinWords: true,
+    gnMinWordsB4Embed: false,
+    gnHeadlineWordCnt: true,
+    gnMaxWords: true,
+    gnTitlesMatch: true,
+    totalScore: 18
+  }
+};
+

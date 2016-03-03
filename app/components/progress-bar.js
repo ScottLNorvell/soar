@@ -30,7 +30,8 @@ export default Component.extend({
     this.get('stateGuy').setProperties({
       showSoarPanel: true,
       showHedPreview: true,
-      showBodyPreview: true
+      showBodyPreview: true,
+      badResults: true
     });
   },
 
@@ -39,7 +40,8 @@ export default Component.extend({
     this.get('stateGuy').setProperties({
       showSoarPanel: true,
       showHedPreview: false,
-      showBodyPreview: false
+      showBodyPreview: false,
+      badResults: false
     });
   }
 });

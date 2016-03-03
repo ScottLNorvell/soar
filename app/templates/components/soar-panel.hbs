@@ -1,19 +1,29 @@
 {{#liquid-if show}}
 <div class="row sr-panel">
   <div class="col-3 sr-checklist">
-  <div><span class="sr-checklist-title">Google News Validation</span></div>
-  <span class="sr-gn-grade fail">FAIL</span>
+  <div>
+    <span class="sr-checklist-title">Google News Validation</span>
+  </div>
+
+    {{#if good}}
+      <span class="sr-gn-grade pass">PASS</span>
+    {{else}}
+      <span class="sr-gn-grade fail">FAIL</span>
+    {{/if}}
+
     {{#each googleNews as |rule|}}
-      <p>
+      <p class={{if (good-result response rule) '' 'fail'}}>
         <i class="icon-check"></i>
         <span class="sr-rule-title">{{rule.title}}</span>
       </p>
     {{/each}}
   </div>
   <div class="col-3 sr-checklist val1">
-  <div><span class="sr-checklist-title">SEO Validation</span></div>
+  <div>
+    <span class="sr-checklist-title">SEO Validation</span>
+  </div>
     {{#each seoA as |rule|}}
-      <p>
+      <p class={{if (good-result response rule) '' 'fail'}}>
         <i class="icon-check"></i>
         <span class="sr-rule-title">{{rule.title}}</span>
         <span class="sr-rule-score">{{rule.score}}</span>
@@ -21,9 +31,11 @@
     {{/each}}
   </div>
   <div class="col-3 sr-checklist val2">
-  <div><span class="sr-checklist-title"></span></div>
+  <div>
+    <span class="sr-checklist-title"></span>
+  </div>
     {{#each seoB as |rule|}}
-      <p>
+      <p class={{if (good-result response rule) '' 'fail'}}>
         <i class="icon-check"></i>
         <span class="sr-rule-title">{{rule.title}}</span>
         <span class="sr-rule-score">{{rule.score}}</span>
@@ -31,7 +43,7 @@
     {{/each}}
   </div>
   <div class="col-3 sr-checklist score">
-    <div class="sr-final-score">74</div>
+    <div class="sr-final-score {{resultClass}}">{{response.totalScore}}</div>
     <div class="sr-final-score__label">SEO Score</div>
   </div>
 </div>

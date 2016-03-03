@@ -3,7 +3,9 @@ import Ember from 'ember';
 const {
   Component,
   computed,
-  inject
+  inject,
+  run,
+  $
 } = Ember;
 
 export default Component.extend({
@@ -31,6 +33,10 @@ export default Component.extend({
   click() {
     let prop = this.get('prop');
     this.toggleProperty(`stateGuy.show${prop}Preview`);
+    run.schedule('afterRender', ()=> {
+      let focusAfter = this.get('focusAfter');
+      $(`.${focusAfter}`).focus();
+    });
     return false;
   }
  });
