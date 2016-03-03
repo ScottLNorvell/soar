@@ -22,7 +22,8 @@ export default Component.extend({
         showHedPreview: false,
         showBodyPreview: false,
         badResults: true,
-        showLtsPanel: true
+        showLtsPanel: true,
+        published: true
       });
     }
   }
