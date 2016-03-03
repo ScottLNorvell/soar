@@ -22,8 +22,8 @@ export default Component.extend({
 		let caption = 'OMG, make it stop!';
 
  		let highlightedParagraphs = previewBodyParagraphs
-	 		.replace(new RegExp(keyword1, 'g'), '<span class="keyword-highlight">' + keyword1 + '</span>')
-	 		.replace(new RegExp(keyword2, 'g'), '<span class="keyword-highlight">' + keyword2 + '</span>')
+	 		.replace(new RegExp(keyword1, 'g'), '<span class="keyword-highlight-good">' + keyword1 + '</span>')
+	 		.replace(new RegExp(keyword2, 'g'), '<span class="keyword-highlight-good">' + keyword2 + '</span>')
 	 		.replace(new RegExp(firstParagraph, 'g'), '<span class="keyword-highlight">' + firstParagraph + '</span>')
 			.replace(new RegExp(hed, 'g'), '<span class="keyword-highlight">' + hed + '</span>')
 			.replace(new RegExp(caption, 'g'), '<span class="keyword-highlight">' + caption + '</span>');
