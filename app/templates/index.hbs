@@ -27,7 +27,7 @@
       <div class="col-12 publish-information">
         {{!-- TODO: change to user's name --}}
         <p>
-          Modified: March 1, 2016 3:44pm by Cathy Zhang
+          Modified: March 1, 2016 3:44pm by Ann
           <h5 class="status draft">
             draft
           </h5>
@@ -43,11 +43,11 @@
       {{form-header-guy label="Hed"}}
       <div class="md-input-area ">
         {{#state-toggler prop="Hed" as |showPreview|}}
-          {{#if showPreview}}
+          {{#liquid-if showPreview class="js-show-prev"}}
             {{preview-guy model=model.hed prop="Hed" style="height: 58px;"}}
           {{else}}
             {{textarea value=model.hed  type="text" title="hed" name="hed" placeholder="New Article" class="wmd-textarea  show hed" style="height: 58px;"}}
-          {{/if}}
+          {{/liquid-if}}
         {{/state-toggler}}
       </div>
     </div>
@@ -87,11 +87,11 @@
       <div class="sticky-placeholder" style="display: none;"></div>
       <div class="md-input-area ">
         {{#state-toggler prop="Body" as |showPreview|}}
-          {{#if showPreview}}
+          {{#liquid-if showPreview class="js-show-prev"}}
             {{preview-guy model=model.body prop="Body" style="height: 515px;"}}
           {{else}}
             {{textarea value=model.body type="text" title="body" name="body" placeholder="Enter body here" class="wmd-textarea  show body" style="height: 515px;"}}
-          {{/if}}
+          {{/liquid-if}}
         {{/state-toggler}}
       </div>
     </div>
