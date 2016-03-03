@@ -34,5 +34,12 @@ export default Ember.Component.extend({
       return 'okay';
     }
     return 'pass';
-  })
+  }),
+
+  click() {
+    this.get('stateGuy').setProperties({
+      showSoarPanel: false,
+      showLtsPanel: true
+    })
+  }
 });
