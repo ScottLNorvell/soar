@@ -41,7 +41,8 @@ export default Component.extend({
       showSoarPanel: true,
       showHedPreview: false,
       showBodyPreview: false,
-      badResults: false
+      badResults: false,
+      showLtsPanel: true
     });
   }
 });

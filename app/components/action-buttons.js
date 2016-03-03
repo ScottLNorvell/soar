@@ -15,8 +15,15 @@ export default Component.extend({
     openModal() {
       this.get('modal').show();
     },
-    showSoarPanel() {
-      this.toggleProperty('stateGuy.showSoarPanel');
+    publish() {
+      this.get('stateGuy').setProperties({
+        firstTime: true,
+        showSoarPanel: false,
+        showHedPreview: false,
+        showBodyPreview: false,
+        badResults: true,
+        showLtsPanel: true
+      });
     }
   }
 });
